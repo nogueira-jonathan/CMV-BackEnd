@@ -20,26 +20,32 @@ public class Produtos {
 	
 	@NotNull
 	@NotBlank
+	@Column
 	private String nome;
 	
 	@NotNull
 	@NotBlank
+	@Column
 	private int valorCompra;
 	
 	@NotNull
 	@NotBlank
+	@Column
 	private int valorCompraFinal;
 	
 	@NotNull
 	@NotBlank
+	@Column
 	private int estoqueInicial;
 	
 	@NotNull
 	@NotBlank
+	@Column
 	private int estoqueFinal;
 	
 	@NotNull
 	@NotBlank
+	@Column
 	private int vendas;
 	
 	

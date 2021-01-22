@@ -1,0 +1,82 @@
+CMV
+
+Recurso: Calcular Custo de Mercadoria Vendida.
+
+Eu como lojista posso calcular o custo da Mercadoria Vendida.
+
+Cenário: Cadastro de um produto para calcular seu custo real de venda.
+Dado: Cadastro de um produto.
+E: seu estoque inicial.
+E: Estque Final.
+E: Valor de Compra Inicial.
+E: Valor de Compra Final.
+E: Venda do mês.
+Então: Aparecerá na tela "produto cadastrado com sucesso"
+
+Cenário: Cadastro de um produto para calcular seu custo real de venda.
+Dado: Cadastro de um produto.
+E: Estoque Final.
+E: Valor de Compra Inicial.
+E: Valor de Compra Final.
+E: Venda do mês.
+MAS: seu estoque inicial não foi informado.
+Então: Aparecerá na tela "por favor preencha este campo"
+
+Cenário: Cadastro de um produto para calcular seu custo real de venda.
+Dado: Cadastro de um produto.
+E: Estoque Inicial.
+E: Valor de Compra Inicial.
+E: Valor de Compra Final.
+E: Venda do mês.
+MAS: seu estoque Final não foi informado.
+Então: Aparecerá na tela "por favor preencha este campo"
+
+Cenário: Cadastro de um produto para calcular seu custo real de venda.
+Dado: Cadastro de um produto.
+E: Estoque Inicial.
+E: Estoque Final.
+E: Valor de Compra Final.
+E: Venda do mês.
+MAS: seu Valor de Compra Inicial não foi informado.
+Então: Aparecerá na tela "por favor preencha este campo"
+
+Cenário: Cadastro de um produto para calcular seu custo real de venda.
+Dado: Cadastro de um produto.
+E: Estoque Inicial.
+E: Estoque Final.
+E: Valor de Compra Inicial
+E: Venda do mês.
+MAS: seu Valor de Compra Final não foi informado.
+Então: Aparecerá na tela "por favor preencha este campo"
+
+Cenário: Cadastro de um produto para calcular seu custo real de venda.
+Dado: Cadastro de um produto.
+E: Estoque Inicial.
+E: Estoque Final.
+E: Valor de Compra Inicial
+E: Valor de Compra Final.
+MAS: seu Valor de Venda do mês não foi informado.
+Então: Aparecerá na tela "por favor preencha este campo"
+
+Calcular o CMV
+
+Recurso: Calcular o CMV.
+Como lojista posso selecionar um produto cadastrado e calcular seu CMV.
+
+Cenário: Selecionar um produto cadastrado.
+Dado: Produto cadastrado.
+Então: Aparecerá na tela os campos preenchidos e o valor do CMV.
+
+Cenário: Selecionar um produto cadastrado.
+Dado: Produto cadastrado.
+MAS: nenhum produto foi selecionado.
+Então: Não aparecerá nada na tela.
+
+Gerar relatório
+
+Recurso: gerar relatório em PDF dos Produtos cadastrados.
+Como lojista posso gerar um relatório de produtos
+
+Cenário: Gerar relatório.
+Dado: filtros.
+Então: O arquivo PDF será gerado e baixado.
